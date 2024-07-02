@@ -1,28 +1,25 @@
-import {times} from "../Utils";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
+export const weathers = () =>{
 
-export const times = () =>{
-    const [weather,setWeather] = useState();
-    const[errors,setErrors]= useState('');
-    const[loading,setLoading] = useState(false);
+const [city, setCity] = useState();
 
+useEffect(() =>{
 
-    useEffect(()=>{
-        const fetchWeather = async()=>{
-            try{
-                setLoading(true);
-                const response = await times();
-                setWeather(response.weather);
-                setLoading(false);
-            }
-            catch(error){
-                setLoading(false)
-                setErrors(`Error: ${error.message}`)
-            }
-        }
-        fetchWeather
-    })
+const fetchCity = async () => {
 
-    return {weather,errors,loading}
+try{
+
+const response = await get
+
 }
+catch{
+    console.error(error);
+}
+
+}
+
+})
+
+}
+

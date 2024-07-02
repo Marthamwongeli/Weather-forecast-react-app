@@ -9,7 +9,8 @@ const homepage= ()=>{
         <div className='weatherApp'>
             <div className='navbar'>
                 <h1>Rayn</h1>
-                <input id='button' type='text' placeholder='Enter city name...' ></input>
+                <input id='button' type='text' placeholder='Enter city name...' onChange={(event) => (event.target.value)} />
+                <button>Search</button>
                
              </div>
              <div className='Weatherimages'>
